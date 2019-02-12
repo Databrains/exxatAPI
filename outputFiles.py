@@ -61,50 +61,6 @@ def writeTxtFile(txtFile, header, url):
     print('File has been written. ' + txtFile)
     print('***File Complete***')
 
-#
-# r = requests.get(siteUrl, headers=headers)
-# # print(r.status_code)
-# data = r.json()
-# # print(data)
-#
-# with open(jsonOutputPath + '\siteOutput' + runDateTime + '.json', 'a') as siteOutput:
-#     json.dump(data,siteOutput)
-
-
-
-
-# with open(r'C:\Users\JefferyMcCain\Documents\PythonFiles\exxatAPI\OutputFiles\JSONFiles\siteOutput2019-02-12_T16.11.00.json') as siteFile:
-#     data = json.load(siteFile)
-#
-#
-# writeTxtFile(siteTxtFile, data)
-
-
-# r = requests.get(studentUrl, headers=headers)
-# print(r.status_code)
-# data = r.json()
-# with open(jsonOutputPath + '\studentOutput' + runDateTime + '.json', 'a') as siteOutput:
-#     json.dump(data,siteOutput)
-
-
-#
-# with open(r'C:\Users\JefferyMcCain\Documents\PythonFiles\exxatAPI\OutputFiles\JSONFiles\studentOutput2019-02-12_T17.43.15.json') as siteFile:
-#     data = json.load(siteFile)
-#
-#
-# writeTxtFile(studentTxtFile, data)
-
-
-# r = requests.get(peopleUrl, headers=headers)
-# print(r.status_code)
-# data = r.json()
-# with open(jsonOutputPath + '\personOutput' + runDateTime + '.json', 'a') as siteOutput:
-#     json.dump(data,siteOutput)
-
-
-
-# with open(r'C:\Users\JefferyMcCain\Documents\PythonFiles\exxatAPI\OutputFiles\JSONFiles\personOutput2019-02-12_T18.24.46.json') as siteFile:
-#     data = json.load(siteFile)
 
 
 writeTxtFile(peopleTxtFile, headers, peopleUrl)
